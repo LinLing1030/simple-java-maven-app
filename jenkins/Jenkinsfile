@@ -39,8 +39,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'mvn clean install'  // Linux/macOS
-                // bat 'mvn clean install'  // Windows
+                //sh 'mvn clean install'  // Linux/macOS
+                 bat 'mvn clean install'  // Windows
             }
         }
         stage('Test') {
